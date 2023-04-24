@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Site</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <h1>Welcome to the Movie Site</h1>
+
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Movie_Web_Site.png" alt="Site Logo" />
+                </a>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Actors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="search-form">
+                    <input class="search-input" type="text" placeholder="Search movies, actors..." />
+
+                    <button class="search-btn" type="submit">
+                        <i id="searchsubmit" class="fa fa-search" value=" " type="submit"></i>
+                    </button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- Search bar -->
+        <form>
+            <input type="text" name="search" placeholder="Search movies..." />
+            <select name="genre">
+                <option value="">All Genres</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+            </select>
+            <input type="number" name="year" placeholder="Release Year" />
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Movie List -->
+        <h2>Popular Movies</h2>
+        <ul>
+            <li>
+                <a href="movie_detail.html">
+                    <img
+                        src="https://chill-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=604800&resize_h=800&url=https%3A%2F%2Fi0.wp.com%2Fimg.phimmoichillb.net%2Fimages%2Finfo%2Fmae-nak-reborn.jpg"
+                        alt="Movie Poster" />
+                    <h3>Movie Title</h3>
+                    <p>Rating: 8.5</p>
+                    <p>Genre: Action, Adventure</p>
+                </a>
+            </li>
+            <li>
+                <a href="movie_detail.html">
+                    <img
+                        src="https://chill-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=604800&resize_h=800&url=https%3A%2F%2Fi0.wp.com%2Fimg.phimmoichillb.net%2Fimages%2Finfo%2Fmae-nak-reborn.jpg"
+                        alt="Movie Poster" />
+                    <h3>Movie Title</h3>
+                    <p>Rating: 7.9</p>
+                    <p>Genre: Drama</p>
+                </a>
+            </li>
+            <li>
+                <a href="movie_detail.html">
+                    <img
+                        src="https://chill-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=604800&resize_h=800&url=https%3A%2F%2Fi0.wp.com%2Fimg.phimmoichillb.net%2Fimages%2Finfo%2Fmae-nak-reborn.jpg"
+                        alt="Movie Poster" />
+                    <h3>Movie Title</h3>
+                    <p>Rating: 7.9</p>
+                    <p>Genre: Drama</p>
+                </a>
+            </li>
+            <li>
+                <a href="movie_detail.html">
+                    <img
+                        src="https://chill-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=604800&resize_h=800&url=https%3A%2F%2Fi0.wp.com%2Fimg.phimmoichillb.net%2Fimages%2Finfo%2Fmae-nak-reborn.jpg"
+                        alt="Movie Poster" />
+                    <h3>Movie Title</h3>
+                    <p>Rating: 7.9</p>
+                    <p>Genre: Drama</p>
+                </a>
+            </li>
+            <li>
+                <a href="movie_detail.html">
+                    <img
+                        src="https://chill-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=604800&resize_h=800&url=https%3A%2F%2Fi0.wp.com%2Fimg.phimmoichillb.net%2Fimages%2Finfo%2Fmae-nak-reborn.jpg"
+                        alt="Movie Poster" />
+                    <h3>Movie Title</h3>
+                    <p>Rating: 7.9</p>
+                    <p>Genre: Drama</p>
+                </a>
+            </li>
+            <li>
+                <a href="movie_detail.html">
+                    <img
+                        src="https://chill-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=604800&resize_h=800&url=https%3A%2F%2Fi0.wp.com%2Fimg.phimmoichillb.net%2Fimages%2Finfo%2Fmae-nak-reborn.jpg"
+                        alt="Movie Poster" />
+                    <h3>Movie Title</h3>
+                    <p>Rating: 7.9</p>
+                    <p>Genre: Drama</p>
+                </a>
+            </li>
+            <!-- More movies -->
+        </ul>
+
+        <!-- Movie Detail Page -->
+        <h2>Movie Title</h2>
+        <img src="movie_poster.jpg" alt="Movie Poster" />
+        <p>Rating: 8.5</p>
+        <p>Genre: Action, Adventure</p>
+        <p>Release Year: 2022</p>
+        <p>Director: John Doe</p>
+        <p>Cast: Jane Doe, Tom Smith, etc.</p>
+        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <button>Add to Watchlist</button>
+        <button>Watch Trailer</button>
+        <form>
+            <textarea name="review" placeholder="Leave a review..."></textarea>
+            <input type="number" name="rating" min="1" max="10" placeholder="Rating" />
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Watchlist -->
+        <h2>My Watchlist</h2>
+        <ul>
+            <li>
+                <a href="movie_detail.html">
+                    <img src="movie_poster.jpg" alt="Movie Poster" />
+                    <h3>Movie Title</h3>
+                    <p>Rating: 8.5</p>
+                    <p>Genre: Action, Adventure</p>
+                </a>
+            </li>
+            <!-- More movies -->
+        </ul>
+
+        <!-- Recommendations -->
+        <h2>Recommendations</h2>
+        <ul>
+            <li>
+                <a href="movie_detail.html">
+                    <img src="movie_poster.jpg" alt="Movie Poster" />
+                    <h3>Movie Title</h3>
+                    <p>Rating: 8.5</p>
+                    <p>Genre: Action, Adventure</p>
+                </a>
+            </li>
+            <!-- More movies -->
+        </ul>
+
+        <div class="watchlist-container">
+            <h2>My Watchlist</h2>
+            <ul class="watchlist-movies">
+                <!-- Placeholder for saved movies -->
+                <li class="watchlist-movie">
+                    <img src="https://via.placeholder.com/200x300" alt="Movie poster" />
+                    <div class="watchlist-movie-details">
+                        <h3>Movie Title</h3>
+                        <p>Release Year: 2022</p>
+                        <p>Director: John Doe</p>
+                        <p>Cast: Jane Doe, Bob Smith, Sarah Johnson</p>
+                        <button class="remove-from-watchlist-btn">Remove from Watchlist</button>
+                    </div>
+                </li>
+                <li class="watchlist-movie">
+                    <img src="https://via.placeholder.com/200x300" alt="Movie poster" />
+                    <div class="watchlist-movie-details">
+                        <h3>Movie Title</h3>
+                        <p>Release Year: 2023</p>
+                        <p>Director: John Doe</p>
+                        <p>Cast: Jane Doe, Bob Smith, Sarah Johnson</p>
+                        <button class="remove-from-watchlist-btn">Remove from Watchlist</button>
+                    </div>
+                </li>
+                <li class="watchlist-movie">
+                    <img src="https://via.placeholder.com/200x300" alt="Movie poster" />
+                    <div class="watchlist-movie-details">
+                        <h3>Movie Title</h3>
+                        <p>Release Year: 2024</p>
+                        <p>Director: John Doe</p>
+                        <p>Cast: Jane Doe, Bob Smith, Sarah Johnson</p>
+                        <button class="remove-from-watchlist-btn">Remove from Watchlist</button>
+                    </div>
+                </li>
+                <li class="watchlist-movie">
+                    <img src="img/blaire-harmon-EhQnpeWSl14-unsplash.jpg" alt="Movie poster" />
+                    <div class="watchlist-movie-details">
+                        <h3>Movie Title</h3>
+                        <p>Release Year: 2025</p>
+                        <p>Director: John Doe</p>
+                        <p>Cast: Jane Doe, Bob Smith, Sarah Johnson</p>
+                        <button class="remove-from-watchlist-btn">Remove from Watchlist</button>
+                    </div>
+                </li>
+                <li class="watchlist-movie">
+                    <img src="img/blaire-harmon-EhQnpeWSl14-unsplash.jpg" alt="Movie poster" />
+                    <div class="watchlist-movie-details">
+                        <h3>Movie Title</h3>
+                        <p>Release Year: 2026</p>
+                        <p>Director: John Doe</p>
+                        <p>Cast: Jane Doe, Bob Smith, Sarah Johnson</p>
+                        <button class="remove-from-watchlist-btn">Remove from Watchlist</button>
+                    </div>
+                </li>
+                <li class="watchlist-movie">
+                    <img src="img/blaire-harmon-EhQnpeWSl14-unsplash.jpg" alt="Movie poster" />
+                    <div class="watchlist-movie-details">
+                        <h3>Movie Title</h3>
+                        <p>Release Year: 2026</p>
+                        <p>Director: John Doe</p>
+                        <p>Cast: Jane Doe, Bob Smith, Sarah Johnson</p>
+                        <button class="remove-from-watchlist-btn">Remove from Watchlist</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy;</p>
+            <footer></footer>
+        </footer>
+    </body>
+</html>

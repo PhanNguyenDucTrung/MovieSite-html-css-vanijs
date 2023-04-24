@@ -1,0 +1,264 @@
+/* Global Styles */
+html {
+    overflow-x: hidden;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    overflow-x: hidden;
+}
+
+a {
+    color: #0077c0;
+    text-decoration: none;
+}
+
+button {
+    background-color: #0077c0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type='text'],
+input[type='number'],
+textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Page Specific Styles */
+
+/* Nav Bar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar-container {
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.navbar-nav {
+    list-style: none;
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 5px;
+    width: auto;
+}
+
+.nav-link {
+    color: #fff;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+/* Logo and SearchBox */
+.navbar-brand {
+    /* display: inline-block; */
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 50px;
+    /* margin: 10px; */
+}
+
+.search-form {
+    display: flex;
+    min-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.search-input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 5px;
+    width: 150px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.search-btn[type='submit'] {
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 0;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.search-btn:hover {
+    background-color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+}
+/* Search Bar */
+input[type='text']:focus,
+input[type='number']:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #0077c0;
+}
+
+/* Movie List */
+h2 {
+    margin-top: 40px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+/* Movie Detail Page */
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+form button[type='submit'] {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #0077c0;
+    color: #fff;
+}
+
+/* Watchlist Styles */
+
+.watchlist-container {
+    margin-top: 20px;
+    width: 1300px;
+}
+
+.watchlist-movies {
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.watchlist-movie {
+    display: inline-block;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    width: 25%;
+    overflow: hidden;
+}
+
+.watchlist-movie {
+    /* existing styles */
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.watchlist-movie img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.watchlist-movie-details {
+    padding: 10px;
+}
+
+.watchlist-movie-details h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.watchlist-movie-details p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.remove-from-watchlist-btn {
+    background-color: #0077c0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+}
